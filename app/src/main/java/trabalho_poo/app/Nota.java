@@ -25,7 +25,7 @@ public class Nota {
     public Disciplina getDisciplina() {
         return disciplina;
     }
-
+    //usando o toString da Object para reformatar a saída.
     @Override
     public String toString() {
         return "Aluno: " + aluno.getNome() + ", Disciplina: " + disciplina.getNome() + ", Nota: " + valor;
