@@ -1,4 +1,4 @@
-package EscolaSenai;
+package trabalho_poo.app;
 
 import java.util.Scanner;
 import java.util.List;
@@ -61,7 +61,7 @@ public class _Application {
                 break;                
                 case 88:
                 System.out.println("Lista de Alunos");
-                EscolaSenai.Aluno.imprimeListaDeAlunos();
+                trabalho_poo.app.Aluno.imprimeListaDeAlunos();
                 break;
                 case 99:System.out.println("Boot do Sistema - Mock");/*
                     //ENDERECOS
