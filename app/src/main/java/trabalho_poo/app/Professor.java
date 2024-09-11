@@ -1,4 +1,4 @@
-package trabalho_poo.app;
+package EscolaSenai;
 
 public class Professor extends Funcionario {
     // •--==> ATRITUBTOS
@@ -12,7 +12,7 @@ public class Professor extends Funcionario {
         this.setFuncDataContratacao(dataContratacao);
         this.setFuncStatus("Ativo");
         this.setNome(nomeProf);
-        this.setDataNascimento("1990");
+        //this.setDataNascimento("1990");
         this.setEmail("SenaiEscola."+nomeProf+"."+this.getProfessorMatricula()+".professores@senai.com");
         this.setSenha(this.professorMatricula);
         
@@ -26,7 +26,7 @@ public class Professor extends Funcionario {
         System.out.println("•====================•");
         System.out.println("Id:"+getId());
         System.out.println("Nome: "+getNome());
-        System.out.println("Data Nascimento: "+getDataNascimento());
+       // System.out.println("Data Nascimento: "+getDataNascimento());
         System.out.println("Email: "+getEmail());
         System.out.println("Senha: "+getSenha());//temporario para debug
     

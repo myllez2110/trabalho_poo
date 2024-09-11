@@ -1,4 +1,4 @@
-package trabalho_poo.app;
+package EscolaSenai;
 
 public abstract class Funcionario extends Pessoa {
     //o que é do funcionario? precisaria saber quem são os funcionários da escola

@@ -1,6 +1,6 @@
-package trabalho_poo.app;
+package EscolaSenai;
 
-public class Notas{//Classe Ent. Associativa Aluno-Disciplina -> Vai escoar os dados para o sistema
+public class Notas {//Classe Ent. Associativa Aluno-Disciplina -> Vai escoar os dados para o sistema
     // •--==> ATRITUBTOS
     private static float idContNota=1.53241f;
     private String idNota; 
@@ -8,7 +8,7 @@ public class Notas{//Classe Ent. Associativa Aluno-Disciplina -> Vai escoar os d
     private Disciplina disciplina;
     private Professor professor;
     private int qtdAvFeitas=0;
-    private double notaFinal;
+    private double notaFinal;//redundante
     private int nota1;
     private int nota2;
     private int nota3;
@@ -104,7 +104,7 @@ public class Notas{//Classe Ent. Associativa Aluno-Disciplina -> Vai escoar os d
         System.out.println("Trabalho 1: "+this.trabalho1);
         System.out.println("Trabalho 2: "+this.trabalho2);
         this.notaFinal=((this.nota1+this.nota2+this.nota3+this.nota4+this.trabalho1+this.trabalho2)/qtdAvFeitas);
-        System.out.println("NOTA FINAL: "+this.notaFinal);
+        System.out.println("NOTA FINAL: "+(this.nota1+this.nota2+this.nota3+this.nota4+this.trabalho1+this.trabalho2)/qtdAvFeitas);
         if(notaFinal>=6){System.out.println("APROVADO");}
         else{System.out.println("REPROVADO");}
         System.out.println("•====================•");
