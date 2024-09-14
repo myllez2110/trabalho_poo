@@ -82,8 +82,55 @@ public class Professor extends Funcionario {
         
     
         //Metodo para atualizar Professor
-        public static void atualizarProfessor(){
+        public static void atualizarProfessor() {
+            Scanner sc = new Scanner(System.in);
+            Scanner at = new Scanner(System.in);
     
+            int atualizado;
+            String nomeAtt;
+            String cpfAtt;
+            String emailAtt;
+            String senhaAtt;
+            System.out.println("----- Atualizar Item da Lista -----");
+            if (listaDeFuncionariosDaEscola.isEmpty()) {
+                System.out.println("A lista está vazia. Não há itens para atualizar.");
+            } else {
+                System.out.println("Escolha o número do item que deseja atualizar:");
+                for (int i = 0; i < listaDeFuncionariosDaEscola.size(); i++) {
+                    System.out.println((i + 1) + " - Nome: " + listaDeFuncionariosDaEscola.get(i).getNome()
+                            +" - CPF: " + listaDeFuncionariosDaEscola.get(i).getCpf() + " - E-mail: " + listaDeFuncionariosDaEscola.get(i).getEmail()
+                            +" - Senha: "+ listaDeFuncionariosDaEscola.get(i).getSenha());
+                }
+                int itemAtualizar = sc.nextInt() - 1;
+                for (int i = 0; i < listaDeFuncionariosDaEscola.size(); i++) {
+                    if (itemAtualizar == i) {
+                        System.out.println("Digite qual opção você deseja modificar:");
+                        System.out.println("1 - Nome\n2 - CPF\n3 - Email\n4 - Senha\n");
+                        atualizado = sc.nextInt();
+                        if (atualizado == 1) {
+                            System.out.print("Novo nome: ");
+                            nomeAtt = at.nextLine();
+                            listaDeFuncionariosDaEscola.get(i).setNome(nomeAtt);
+                        }
+                        if (atualizado == 2) {
+                            System.out.print("Novo CPF: ");
+                            cpfAtt = at.nextLine();
+                            listaDeFuncionariosDaEscola.get(i).setCpf(cpfAtt);
+                        }
+                        if (atualizado == 3) {
+                            System.out.print("Novo email: ");
+                            emailAtt = at.nextLine();
+                            listaDeFuncionariosDaEscola.get(i).setEmail(emailAtt);
+                        }
+                        if (atualizado == 4) {
+                            System.out.print("Nova senha: ");
+                            senhaAtt = at.nextLine();
+                            listaDeFuncionariosDaEscola.get(i).setSenhaNova(senhaAtt);
+                        }
+                    }
+    
+                }
+            }
         }
     
     public void imprimePessoa(){ //Metodo da Superclasse Pessoa ele liga o extends Pessoa no aluno

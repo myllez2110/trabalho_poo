@@ -7,36 +7,33 @@ public class Turma {//
 
     private int id;
     private String numero;
-    private List<Aluno> listaDeAlunos; //listaDeAlunos.add ou remove
-    private List<Professor> listaDeProf; //listaDeAlunos.add ou remove
-    
-    public Turma(int id, String numero){
+    private List<Aluno> listaDeAlunos; // listaDeAlunos.add ou remove
+    private List<Professor> listaDeProf; // listaDeAlunos.add ou remove
+
+    public Turma(int id, String numero) {
         this.id = id;
         this.numero = numero;
         this.listaDeAlunos = new ArrayList<>();
-        this.listaDeProf = new ArrayList<>();        
+        this.listaDeProf = new ArrayList<>();
     }
 
-    public void adicionarAluno(Aluno aluno){
+    public void adicionarAluno(Aluno aluno) {
         this.listaDeAlunos.add(aluno);
     }
-    
-    
-    public void adicionarProf(Professor professor){
-    this.listaDeProf.add(professor);
+
+    public void adicionarProf(Professor professor) {
+        this.listaDeProf.add(professor);
     }
 
+    public void imprimeTurma() {
 
-    public void imprimeTurma(){
-
-        System.out.println("Id da Turma:"+this.getId());
-        if(listaDeAlunos.isEmpty()){
+        System.out.println("Id da Turma:" + this.getId());
+        if (listaDeAlunos.isEmpty()) {
             System.out.println("Turma vazia");
-        }
-        else{
+        } else {
             for (Aluno aluno : listaDeAlunos) {
-                System.out.println("Aluno: "+aluno.getNome()+"");
-                System.out.println("Aluno: "+aluno.getAlunoStatus()+"");
+                System.out.println("Aluno: " + aluno.getNome() + "");
+                System.out.println("Aluno: " + aluno.getAlunoStatus() + "");
             }
         }
     }

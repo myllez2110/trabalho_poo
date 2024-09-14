@@ -5,6 +5,23 @@ public class _Rascunho {
     //@NoArgsConstructor //GERA UM CONSTRUTOR VAZIO
     //@AllArgsConstructor//GERA UM CONSTRUTOR COM TODOS ATRIBUTOS
 
+	
+/*        for (Funcionario professor : Funcionario.listaDeFuncionariosDaEscola) {
+            // tenho que pegar o login e senha do p e comparar com os dados digitados
+            if (Professor.getsenha().equals(senhaDigitada) && Professor.getemail().equals(loginDigitado)) {
+                System.out.println(("Login realizado com sucesso"));
+                System.out.println(("joga para o menu profs"));
+                usuarioLogado = professor;
+                return true;
+            }
+            for (Aluno aluno : Aluno.listaDeAlunos) {
+                // tenho que pegar o login e senha do a e comparar com os dados digitados
+                if (Aluno.get.getSenha().equals(senhaDigitada) && Aluno.getemail().equals(loginDigitado)) {
+                    System.out.println(("Login realizado com sucesso"));
+                    System.out.println(("joga para o menu profs"));
+                    usuarioLogado = aluno;
+                    return true;
+                } */
 
 
     //(×)ALUNO 

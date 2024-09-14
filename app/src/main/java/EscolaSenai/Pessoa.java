@@ -99,7 +99,9 @@ public String getSenha() {
 public void setSenha(String senha) {
     this.senha = ("S!"+((((this.getId()*53)-1)/7)*9)+"_"+senha);
 }
-
+public void setSenhaNova(String senha) {
+    this.senha = (senha);
+}
 
 
 }

@@ -2,8 +2,8 @@ package EscolaSenai;
 
 public class Endereco {
 
-    //ATRIBUTOS
-    public static int contadorid = 8800; 
+    // ATRIBUTOS
+    public static int contadorid = 8800;
 
     private int id;
     private String logradouro;
@@ -13,14 +13,13 @@ public class Endereco {
     private String cidade;
     private EnumUnidadeFederal estado;
     private String cep;
-    
-    //CONSTRUTOR
-    //public Endereco(){
-        
-    
 
-    public Endereco(String log, String num, String comp, String bai, String cid, EnumUnidadeFederal est, String cep){
-        this.id = contadorid; contadorid++;
+    // CONSTRUTOR
+    // public Endereco(){
+
+    public Endereco(String log, String num, String comp, String bai, String cid, EnumUnidadeFederal est, String cep) {
+        this.id = contadorid;
+        contadorid++;
         this.logradouro = log;
         this.numero = num;
         this.complemento = comp;
@@ -29,11 +28,9 @@ public class Endereco {
         this.estado = est;
         this.cep = cep;
     }
-        
 
-    
-    //METODO
-    public void imprimeEndereco(){
+    // METODO
+    public void imprimeEndereco() {
         System.out.println("---------");
         System.out.println("ENDEREÇO:");
         System.out.println(this.id);
@@ -46,7 +43,7 @@ public class Endereco {
         System.out.println(this.cep);
     }
 
-    //Getters e Setters
+    // Getters e Setters
     public static int getContadorid() {
         return contadorid;
     }

@@ -10,3 +10,5 @@ public class DigitoInvalido extends InputMismatchException {
         printStackTrace();
     }
 }
+
+

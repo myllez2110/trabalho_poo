@@ -10,16 +10,15 @@ public enum EnumOcupacao {
     INSP("Inspetor(a)"),
     DIRET("Diretor(a)");
 
-
-    //ATRIBUTO
+    // ATRIBUTO
     private final String EnumOcupacao;
-    
-    //CONSTRUTOR
+
+    // CONSTRUTOR
     EnumOcupacao(String ocupacao) {
         this.EnumOcupacao = ocupacao;
     }
 
-    //GETTER
+    // GETTER
     public String getEnumOcupacao() {
         return this.EnumOcupacao;
     }

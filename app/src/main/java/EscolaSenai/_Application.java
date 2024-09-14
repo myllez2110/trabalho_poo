@@ -58,8 +58,7 @@ public class _Application {
 
         
         
-        /*
-        Escola primeira entrega
+        
         //DISCIPLINA
         Disciplina disciplina1 = new Disciplina("TIC", "Lógica de Programação", "Integral", "Jul-2024", "Dez-2024");
         Disciplina disciplina2 = new Disciplina("TIC", "Banco de Dados", "Integral", "Jul-2024", "Dez-2024");
@@ -72,9 +71,9 @@ public class _Application {
         disciplina4.imprimeDisciplina();
 
         //PROFESSOR
-        Professor professor1 = new Professor("PROF01", "2019");
-        Professor professor2 = new Professor("PROF02", "2016");
-        Professor professor3 = new Professor("PROF03", "2020");
+        Professor professor1 = new Professor("PROF01");
+        Professor professor2 = new Professor("PROF02");
+        Professor professor3 = new Professor("PROF03");
 
         professor1.imprimePessoa();
         professor2.imprimePessoa();
@@ -134,7 +133,6 @@ public class _Application {
         nota3.imprimeBoletim();
         nota4.imprimeBoletim();
         nota5.imprimeBoletim();
-        Fim 
-        */
+        
 	}
 }

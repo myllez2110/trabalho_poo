@@ -7,15 +7,15 @@ public enum EnumTurno {
     NOITE("Noite"),
     INTEGRAL("Integral");
 
-    //Atributo
+    // Atributo
     private final String escolhaTurnoEnum;
-    
-    //Construtor
+
+    // Construtor
     EnumTurno(String enumTurnoPorExtenso) {
         this.escolhaTurnoEnum = enumTurnoPorExtenso;
     }
-    
-    //Getter
+
+    // Getter
     public String getEscolhaTurnoEnum() {
         return escolhaTurnoEnum;
     }
